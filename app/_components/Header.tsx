@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { Link } from 'lucide-react'
+import Link from 'next/link'  
 import Image  from 'next/image'
 import React from 'react'
 
@@ -29,8 +29,8 @@ function Header() {
       {/*Menu Options*/}
       <div className='flex gap-8 items-center'>
         {menuOptions.map((menu, index) =>(
-          <Link href={menu.path}>
-            <h2 className='text-lg hover:scale-105 transition-all hover:text-primary' >{menu.name}</h2>
+          <Link key={index} href={menu.path}> 
+           <h2 className='text-lg hover:scale-105 transition-all hover:text-primary' >{menu.name}</h2>
           </Link>
 
         ))}

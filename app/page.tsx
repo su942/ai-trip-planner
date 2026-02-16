@@ -1,9 +1,12 @@
 import Image from "next/image";
+import Header from "./_components/Header";
+import { Button } from "@/components/ui/button";
+import Hero from "./_components/hero";
 
 export default function Home() {
   return (
     <div>
-      <h2>hello my namaae is suraj</h2>
+    
     </div>
   );
 }
